@@ -1,6 +1,7 @@
 // Some copyright should be here...
 
 using UnrealBuildTool;
+using System.IO;
 
 public class VRSpectatorUtilities : ModuleRules
 {
@@ -10,7 +11,6 @@ public class VRSpectatorUtilities : ModuleRules
 
         PublicIncludePaths.AddRange(
             new string[] {
-                "HeadMountedDisplay"
             }
             );
 
@@ -26,6 +26,7 @@ public class VRSpectatorUtilities : ModuleRules
             new string[]
             {
                 "Core",
+                "HeadMountedDisplay"
 				// ... add other public dependencies that you statically link with here ...
 			}
             );
